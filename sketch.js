@@ -23,7 +23,11 @@ function setup() {
 	ball2 = createSprite(350,400,50,50);
 	ball3 = createSprite(425,400,50,50);
 	ball4 = createSprite(500,400,50,50);
-	
+	chain1 = new Chain(ball1.body,roof.body);
+	chain2 = new Chain(ball2.body,roof.body);
+	chain3 = new Chain(ball3.body,roof.body);
+	chain4 = new Chain(ball4.body,roof.body);
+
 	Engine.run(engine);
 	
 }
@@ -32,7 +36,10 @@ function setup() {
 function draw() {
 	rectMode(CENTER);
 	background(0);
-  
+	chain1.display(); 
+	chain2.display(); 
+	chain3.display(); 
+	chain4.display(); 
   drawSprites();
  
 }
