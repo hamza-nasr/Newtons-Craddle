@@ -11,8 +11,8 @@ class Chain{
     }
 
     display(){
-        var pointA = this.chain.bodyA.position;
-        var pointB = this.chain.bodyB.position;
+        var pointA = this.chain.pointA.position;
+        var pointB = this.chain.pointB.position;
         strokeWeight(4);
         line(pointA.x, pointA.y, pointB.x, pointB.y);
         //rope1 = new rope(ball1.body, roof.body, -bobDiamater*2,0);
