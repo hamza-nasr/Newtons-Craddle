@@ -23,10 +23,10 @@ function setup() {
 	ball2 = createSprite(350,400,50,50);
 	ball3 = createSprite(425,400,50,50);
 	ball4 = createSprite(500,400,50,50);
-	chain1 = new Chain(ball1.point,roof.body);
-	chain2 = new Chain(ball2.point,roof.body);
-	chain3 = new Chain(ball3.point,roof.body);
-	chain4 = new Chain(ball4.point,roof.body);
+	rope1 = new rope(ball1.point,roof.body);
+	rope2 = new rope(ball2.point,roof.body);
+	rope3 = new rope(ball3.point,roof.body);
+	rope4 = new rope(ball4.point,roof.body);
 
 	Engine.run(engine);
 	

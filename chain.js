@@ -1,4 +1,4 @@
-class Chain{
+class Rope{
     constructor(bodyA, bodyB){
         var options = {
             bodyA: bodyA,
@@ -6,13 +6,13 @@ class Chain{
             stiffness: 0.04,
             length: 10
         }
-        this.chain = Constraint.create(options);
-        World.add(world, this.chain);
+        this.rope = Constraint.create(options);
+        World.add(world, this.rope);
     }
 
     display(){
-        var pointA = this.chain.pointA.position;
-        var pointB = this.chain.pointB.position;
+        var pointA = this.rope.pointA.position;
+        var pointB = this.rope.pointB.position;
         strokeWeight(4);
         line(pointA.x, pointA.y, pointB.x, pointB.y);
         //rope1 = new rope(ball1.body, roof.body, -bobDiamater*2,0);
